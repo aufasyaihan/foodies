@@ -1,5 +1,5 @@
 import Link from "next/link";
-import classes from "@/components/main-header.module.css";
+import classes from "./main-header.module.css";
 
 import logoImg from "@/assets/logo.png";
 import Image from "next/image";
