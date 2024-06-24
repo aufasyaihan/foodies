@@ -1,13 +1,23 @@
 import Link from "next/link";
-import React from "react";
+import classes from "./page.module.css";
 
 export default function MealsPage() {
   return (
-    <div>
-      <h1>Meals Page</h1>
-      <p>Welcome to the Meals Page!</p>
-      <Link href="/meals/item-1">Item 1</Link>
-      <Link href="/meals/item-2">Item 2</Link>
-    </div>
+    <>
+      <header className={classes.header}>
+        <h1>
+          Delicious meals, created
+          <span className={classes.highlight}> by you.</span>
+        </h1>
+        <p>
+          Choose your favorite recipe and cook it yourself. It&apos;s easy and
+          fun!
+        </p>
+        <p className={classes.cta}>
+          <Link href="/meals/share">Share Your Favorite Recipe</Link>
+        </p>
+      </header>
+      <main className={classes.main}></main>
+    </>
   );
 }
