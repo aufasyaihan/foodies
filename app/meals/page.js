@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import MealsLoadingPage from "./loading-meals";
 
 export const metadata = {
-  title: "All Meals",
+  title: "Foodies | All Meals",
   description: "Browse all meals shared by the community.",
 };
 

@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: meal.title,
+    title: `Foodies | ${meal.title}`,
     description: meal.summary,
   };
 }
